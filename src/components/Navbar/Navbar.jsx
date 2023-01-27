@@ -5,7 +5,6 @@ import Secciones from './Secciones/Secciones';
 import CartWidget from './CartWidget/CartWidget';
 
 const Navbar = () => {
-    
     return (
         <>
             <nav>
@@ -15,7 +14,7 @@ const Navbar = () => {
                 </div>
                 <div className="secciones">
                     <Secciones/>
-                    <CartWidget cantCarrito={5}/>
+                    <CartWidget cantCarrito={7}/>
                 </div>
             </nav>
         </>

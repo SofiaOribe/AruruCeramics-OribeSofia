@@ -9,13 +9,13 @@ const Secciones = () => {
     return (
         <>
          <ul className="links">
-            <li><a href="#">HOME</a></li>
+            <li><a href="">HOME</a></li>
             <li className='liProducts'>
-                <a href="#">PRODUCTS</a>
+                <a href="">PRODUCTS</a>
                 <div className='menuVertical'><Categorias/></div>
             </li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT</a></li>
          </ul>
         </>
     );
