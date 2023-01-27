@@ -1,0 +1,41 @@
+
+
+header nav {
+    background-color: var(--color-bg);
+    margin: 0 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*-Logo-*/
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    display: flex;
+    justify-content: left;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.logo span {
+    margin: 10px;
+    color: var(--color-text);
+    font-family: var(--fontFamily1);
+    font-size: 20px;
+}
+
+/*-Secciones-*/
+
+.secciones{
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
