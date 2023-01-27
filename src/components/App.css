@@ -6,4 +6,11 @@ header {
     z-index: 9999;
     transition: all 300ms ease-in-out;
     padding: 20px 0px;
+    background-color: var(--color-bg);
+}
+
+main {
+    width: 90%;
+    margin: 0 90px;
+    margin-top: 150px;
 }

@@ -5,6 +5,7 @@ header nav {
     margin: 0 80px;
     display: flex;
     justify-content: space-between;
+    transition: all .1s;
 }
 
 /*-Logo-*/
@@ -38,4 +39,9 @@ header nav {
     align-items: center;
 }
 
+@media (max-width: 670px) {
+    header nav {
+        margin: 0 10px;
+    }    
+}
 

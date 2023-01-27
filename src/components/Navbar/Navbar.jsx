@@ -10,11 +10,11 @@ const Navbar = () => {
             <nav>
                 <div className="logo">
                     <img src="https://cdn-icons-png.flaticon.com/512/6900/6900891.png" alt=""/>
-                    <span>Aruru Ceramic</span>
+                    <span>Aruru Ceramics</span>
                 </div>
                 <div className="secciones">
                     <Secciones/>
-                    <CartWidget cantCarrito={7}/>
+                    <CartWidget cantCarrito={8}/>
                 </div>
             </nav>
         </>

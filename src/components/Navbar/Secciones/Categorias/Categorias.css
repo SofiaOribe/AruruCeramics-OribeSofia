@@ -15,4 +15,6 @@
    border-radius: 50px;
 }
 
-
+.menuVertical li a:hover {
+    color: var(--color-secondary);
+ }

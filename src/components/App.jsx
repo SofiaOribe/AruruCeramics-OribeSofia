@@ -3,6 +3,7 @@ import './App.css';
 import React from 'react';
 //Importo componentes
 import Navbar  from './Navbar/Navbar';
+import ItemListContainer from './ItemListContainer/ItemListContainer';
 
 //rfc hacer componente
 
@@ -21,6 +22,9 @@ const App = () => {
       <header>
         <Navbar/>
       </header>
+      <main>
+        <ItemListContainer greeting={"Item List Container"}/>
+      </main>
     </>
   );
 }
