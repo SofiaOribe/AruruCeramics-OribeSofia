@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,500;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap");
+.navbar {
+  background-color: #fafbf5;
+  margin: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.1s;
+}
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+.navbar .logo img {
+  display: flex;
+  justify-content: left;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+.navbar .logo span {
+  margin: 10px;
+  color: #41474C;
+  font-family: "Josefin Sans";
+  font-size: 20px;
+}
+.navbar .secciones {
+  padding: 0;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+@media (max-width: 670px) {
+  header nav {
+    margin: 0 10px;
+  }
+}
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: all 300ms ease-in-out;
+  padding: 20px 0px;
+  background-color: #fafbf5;
+}
+
+main {
+  width: 90%;
+  margin: 0 90px;
+  margin-top: 150px;
+}
+
+.btnCart {
+  margin: 10px;
+  border: none;
+  background: #f2ede9;
+  width: 42px;
+  height: 42px;
+  border-radius: 50px;
+  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.308);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btnCart:hover {
+  background-color: aqua;
+}
+
+.pCart {
+  position: absolute;
+  margin-top: 30px;
+  background-color: #f2ede9;
+  color: #41474C;
+  border-radius: 50px;
+  padding: 4px 6px;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: "Josefin Sans";
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.355);
+}
+
+.menuVertical li {
+  padding: 8px;
+  margin-top: 5px;
+  text-align: center;
+  transition: all 0.1s;
+}
+.menuVertical li a {
+  font-size: 12px;
+}
+.menuVertical li a:hover {
+  color: #E55812;
+}
+.menuVertical li:hover {
+  background-color: #f2ede9;
+  border-radius: 50px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.links li {
+  list-style: none;
+  padding: 0 10px;
+}
+.links li a {
+  text-decoration: none;
+  color: #41474C;
+  font-family: "Josefin Sans";
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+.links li a:hover {
+  color: #e8e0d9;
+}
+
+.category {
+  position: absolute;
+  display: none;
+  width: 80px;
+}
+
+.liProducts:hover .category {
+  display: block;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fafbf5;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,4 @@
-import './Secciones.css';
+
 
 import React from 'react';
 
@@ -12,7 +12,7 @@ const Secciones = () => {
             <li><a href="">HOME</a></li>
             <li className='liProducts'>
                 <a href="">PRODUCTS</a>
-                <div className='menuVertical'><Categorias/></div>
+                <div className='category'><Categorias/></div>
             </li>
             <li><a href="">ABOUT</a></li>
             <li><a href="">CONTACT</a></li>

@@ -1,6 +1,5 @@
-import './App.css';
-
 import React from 'react';
+import '../styles/styles.css';
 //Importo componentes
 import Navbar  from './Navbar/Navbar';
 import ItemListContainer from './ItemListContainer/ItemListContainer';
