@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,500;1,200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400&display=swap');
 
+/*Partials*/
 @import './partials/maps';
+@import './partials/extends';
 @import './partials/navbar';
 @import './partials/app';
 @import './partials/cartwidget';
-@import './partials/categorias';
-@import './partials/secciones';
+@import './partials/home';
 
+
+/*General*/
 
 * {
     padding: 0;

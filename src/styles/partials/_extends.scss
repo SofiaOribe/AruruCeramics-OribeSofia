@@ -1,0 +1,59 @@
+%flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+%flexRight {
+    display: flex;
+    justify-content: right;
+}
+
+%flexDirection {
+    display: flex;
+    flex-direction: column;
+}
+
+%flexEvenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+%flexBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+%flexItemCenter {
+    display: flex;
+    align-items:flex-end;
+}
+
+%boxShadowCard {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1), 
+    0 2px 2px rgba(0,0,0,0.1), 
+    0 4px 4px rgba(0,0,0,0.1), 
+    0 8px 8px rgba(0,0,0,0.1),
+    0 16px 16px rgba(0,0,0,0.1);
+}
+
+%gradientCard {
+    background-image: linear-gradient(
+                  to bottom,
+                  hsla(0, 0%, 0%, 0) 0%,
+                  hsla(0, 0%, 0%, 0.009) 11.7%,
+                  hsla(0, 0%, 0%, 0.034) 22.1%,
+                  hsla(0, 0%, 0%, 0.072) 31.2%,
+                  hsla(0, 0%, 0%, 0.123) 39.4%,
+                  hsla(0, 0%, 0%, 0.182) 46.6%,
+                  hsla(0, 0%, 0%, 0.249) 53.1%,
+                  hsla(0, 0%, 0%, 0.320) 58.9%,
+                  hsla(0, 0%, 0%, 0.394) 64.3%,
+                  hsla(0, 0%, 0%, 0.468) 69.3%,
+                  hsla(0, 0%, 0%, 0.540) 74.1%,
+                  hsla(0, 0%, 0%, 0.607) 78.8%,
+                  hsla(0, 0%, 0%, 0.668) 83.6%,
+                  hsla(0, 0%, 0%, 0.721) 88.7%,
+                  hsla(0, 0%, 0%, 0.762) 94.1%,
+                  hsla(0, 0%, 0%, 0.790) 100%
+                );
+}
