@@ -5,15 +5,13 @@ header {
     left: 0;
     z-index: 9999;
     transition: all 300ms ease-in-out;
-    padding: 20px 0px;
-   /*  backdrop-filter: blur( 5.5px ); */
     .navbar {
-        margin: 0 80px;
+        background-color: map-get($colors, color-bg);
+        padding: 10px 30px;
         display: flex;
         justify-content: space-between;
         transition: all .1s;
         z-index: 1000;
-        border-bottom: 1px solid map-get($colors, color-text-offset);
         .logo {
             display: flex;
             align-items: center;
@@ -52,42 +50,26 @@ header {
                         }
                     }
                 }
-                .liProducts{
-                    .category {
-                        position: absolute;
-                        display: none;
-                        transition: all .1s ;
-                        .menuVertical {
-                            display: flex;
-                            flex-direction: column;
-                            backdrop-filter: blur( 5.5px );
-                            padding: 2vh;
-                            a {
-                                padding: 10px 0px;
-                                font-size: 11px;
-                                &:hover {
-                                    color: map-get($colors, color-primary-offset);
-                                }
-                            }
-                        }            
-                    }
-                    &:hover .category {
-                        display: block;
-                    }
-                }
+                
             }
         }
     }
    
 }
 
-
-
-
-
-@media (max-width: 670px) {
-    header nav {
-        margin: 0 10px;
-    }    
+.scroll-down header {
+    transform: translate3d(0, -100%, 0);
 }
 
+.scroll-up header {
+    background-color: #fef6e422;
+    box-shadow: 0 8px 32px 0 rgba(73, 73, 73, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 7px );
+}
+
+/* 
+@media screen and (max-width: 700px) {
+     
+}
+ */
