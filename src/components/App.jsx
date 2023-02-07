@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/styles.css';
+import ItemListContainer from './ItemListContainer/ItemListContainer';
 
 //Importo componentes
 import Navbar  from './Navbar/Navbar';
-
 
 const App = () => {
 
@@ -32,10 +32,17 @@ const App = () => {
         <Navbar/>
       </header>
       <main>
-
+        <div className='itemListContainer'>
+          <ItemListContainer/>
+        </div>
       </main>
+      <footer>
+        
+      </footer>
     </>
   );
 }
 
 export default App;
+
+

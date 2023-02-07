@@ -12,7 +12,7 @@ const Navbar = () => {
                 </div>
                 <div className="secciones">
                     <Secciones/>
-                    <CartWidget cantCarrito={8}/>
+                    <CartWidget cantCarrito={9}/>
                 </div>
             </nav>
         </>

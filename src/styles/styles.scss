@@ -8,6 +8,7 @@
 @import './partials/navbar';
 @import './partials/app';
 @import './partials/cartwidget';
+@import './partials/item';
 
 
 /*General*/
@@ -19,4 +20,11 @@
 
 body {
     background-color: map-get($colors, color-bg);
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    margin: 0;
 }
+

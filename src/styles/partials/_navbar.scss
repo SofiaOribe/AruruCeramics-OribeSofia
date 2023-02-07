@@ -4,12 +4,11 @@ header {
     top: 0;
     left: 0;
     z-index: 9999;
-    transition: all 300ms ease-in-out;
+    transition: all 300ms ease;
     .navbar {
         background-color: map-get($colors, color-bg);
         padding: 10px 30px;
-        display: flex;
-        justify-content: space-between;
+        @extend %flexBetween;
         transition: all .1s;
         z-index: 1000;
         .logo {
@@ -26,12 +25,10 @@ header {
         }
         .secciones{
             padding: 0;
-            display: flex;
-            justify-content: right;
+            @extend %flexRight;
             align-items: center;
             .links {
                 display: flex;
-                align-items: center;
                 margin: 0;
                 padding: 0;
                 li {
