@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/styles.css';
-import ItemListContainer from './ItemListContainer/ItemListContainer';
 
 //Importo componentes
+import ItemListContainer from './ItemListContainer/ItemListContainer';
 import Navbar  from './Navbar/Navbar';
 
 const App = () => {

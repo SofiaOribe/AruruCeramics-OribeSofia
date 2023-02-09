@@ -11,7 +11,7 @@ const Item = ({item}) => {
                     <img src={item.img} alt="" />
                     <h2>{item.nombre} {item.modelo}</h2>
                     <h3>${item.precio}</h3>
-                    <button className='buttonProducto'>Ver producto</button>
+                    <button className='buttonProducto'><a href="">Ver producto</a></button>
                 </div>
             </div>
         </div>

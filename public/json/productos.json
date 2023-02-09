@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "nombre": "Taza con mango",
+        "nombre": "Taza",
         "marca": "Aruru",
         "modelo": "Marine",
         "precio": 10,
@@ -13,7 +13,7 @@
     },
     {
         "id": 2,
-        "nombre": "Taza con mango",
+        "nombre": "Taza",
         "marca": "Aruru",
         "modelo": "Bebé",
         "precio": 10,
@@ -25,7 +25,7 @@
     },
     {
         "id": 3,
-        "nombre": "Taza con mango",
+        "nombre": "Taza",
         "marca": "Aruru",
         "modelo": "Minimalism",
         "precio": 10,
@@ -37,7 +37,7 @@
     },
     {
         "id": 4,
-        "nombre": "Taza con mango",
+        "nombre": "Taza",
         "marca": "Aruru",
         "modelo": "Blancanieves",
         "precio": 10,
@@ -49,7 +49,7 @@
     },
     {
         "id": 5,
-        "nombre": "Taza con mango",
+        "nombre": "Taza",
         "marca": "Aruru",
         "modelo": "Marine",
         "precio": 14,
@@ -61,7 +61,7 @@
     },
     {
         "id": 6,
-        "nombre": "Taza con mango",
+        "nombre": "Taza",
         "marca": "Aruru",
         "modelo": "Bebé",
         "precio": 14,
@@ -73,7 +73,7 @@
     },
     {
         "id": 7,
-        "nombre": "Taza con mango",
+        "nombre": "Taza",
         "marca": "Aruru",
         "modelo": "Minimalism",
         "precio": 14,
@@ -85,7 +85,7 @@
     },
     {
         "id": 8,
-        "nombre": "Taza con mango",
+        "nombre": "Taza",
         "marca": "Aruru",
         "modelo": "Blancanieves",
         "precio": 14,

@@ -9,7 +9,7 @@
 @import './partials/app';
 @import './partials/cartwidget';
 @import './partials/item';
-
+@import './partials/itemDetail';
 
 /*General*/
 
@@ -25,6 +25,7 @@ body {
     "header"
     "main"
     "footer";
+    grid-template-columns: repeat(1, 1fr);
     margin: 0;
 }
 
