@@ -6,7 +6,6 @@
 @import './partials/maps';
 @import './partials/extends';
 @import './partials/navbar';
-@import './partials/app';
 @import './partials/cartwidget';
 @import './partials/item';
 @import './partials/itemDetail';
@@ -20,12 +19,5 @@
 
 body {
     background-color: map-get($colors, color-bg);
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-    grid-template-columns: repeat(1, 1fr);
-    margin: 0;
 }
 

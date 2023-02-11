@@ -5,7 +5,7 @@ import CartWidget from './CartWidget/CartWidget';
 
 const Navbar = () => {
     return (
-        <>
+        <header>
             <nav className='navbar'>
                 <div className="logo">
                     <span>ARURU</span>
@@ -15,7 +15,7 @@ const Navbar = () => {
                     <CartWidget cantCarrito={9}/>
                 </div>
             </nav>
-        </>
+        </header>
     );
 }
 

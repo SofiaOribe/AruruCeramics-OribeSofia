@@ -1,4 +1,5 @@
 .itemListContainer {
+    margin-top: 150px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -19,7 +20,7 @@
     transition: transform 0.6s;
     transform-style: preserve-3d;
     border-radius: 16px;
-    font-family: map-get($family, fontText); 
+    box-shadow:  5px 5px 15px #c3c4bf,
 }
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
@@ -36,17 +37,18 @@
 }
 .flip-card-front {
     background-color: map-get($colors, color-primary-offset);
+    
 }
 
 .flip-card-front img{
-    width: 140px;
-    
+    width: 200px;
 }
 
 .flip-card-back {
     background-color: map-get($colors, color-primary-offset);
     color: map-get($colors, color-text);
     transform: rotateY(180deg);
+    font-family: map-get($family, fontText); 
 }
 .flip-card-back img{
     width: 140px;
@@ -56,6 +58,7 @@
     text-transform: uppercase;
     font-size: 16px;
     margin-bottom: 10px;
+    
 }
 .flip-card-back h3 {
     font-size: 12px;
@@ -65,11 +68,19 @@
 .buttonProducto {
     border: none;
     border-radius: 16px;
-    background-color: map-get($colors, color-btn);
     padding: 5px 10px;
-    a {
-        color: map-get($colors, color-text);
-        text-decoration: none;
+    transition: all .2s ease-in;
+    color: map-get($colors, color-text);
+    text-decoration: none;
+    font-family: map-get($family, fontText);
+    font-weight: 500;
+    color: map-get($colors, color-text);
+    cursor: pointer;
+    background: linear-gradient(145deg, #ffffff, #e2e1e18a);
+                    box-shadow:  5px 5px 10px #817d7d95;
+    &:hover {
+        background: linear-gradient(145deg, #7d868d, #697177);
+        color: map-get($colors, color-bg);
     }
 }
 

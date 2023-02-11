@@ -1,9 +1,11 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import '../styles/styles.css';
 
 //Importo componentes
-import ItemListContainer from './ItemListContainer/ItemListContainer';
 import Navbar  from './Navbar/Navbar';
+import ItemListContainer from './ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer';
 
 const App = () => {
 
@@ -28,17 +30,15 @@ const App = () => {
 
   return (
     <>
-      <header>
+      <BrowserRouter>
         <Navbar/>
-      </header>
-      <main>
-        <div className='itemListContainer'>
-          <ItemListContainer/>
-        </div>
-      </main>
-      <footer>
-        
-      </footer>
+        <Routes>
+          <Route path='/' element={<ItemListContainer/>}/>
+          <Route path='/category/:idCategoria' element={<ItemListContainer/>}/>
+          <Route path='/item/:id' element={<ItemDetailContainer/>} />
+        </Routes>
+
+      </BrowserRouter>
     </>
   );
 }

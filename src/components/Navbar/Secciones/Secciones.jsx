@@ -1,15 +1,14 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 const Secciones = () => {
 
     return (
         <>
          <ul className="links">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PRODUCTS</a></li>
-            <li><a href="#">COLLECTIONS</a></li>
-            <li><a href="#">ABOUT</a></li>
+            <li><Link className='aNavbar' to={'/'}>INICIO</Link></li>
+            <li><Link className='aNavbar'>PRODUCTOS</Link></li>
+            <li><Link className='aNavbar'>INFORMACIÓN</Link></li>
          </ul>
         </>
     );

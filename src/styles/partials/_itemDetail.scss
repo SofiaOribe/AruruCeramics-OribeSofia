@@ -1,0 +1,152 @@
+.itemContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 90px;
+    padding: 50px;
+    border-radius: 26px;
+    background: linear-gradient(145deg, #fffef9, #dad5d2);
+    box-shadow:  5px 5px 15px #c3c4bf,
+             -5px -5px 15px #ffffff;
+    .imgDetail {
+        padding: 10px;
+        img {
+            width: 300px;
+            height: 450px;
+            border-radius: 15px;
+            box-shadow:  5px 5px 15px #c3c4bf69,
+                        -2px -2px 15px #d5d6d069
+        }
+    }
+    .productDetail {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: map-get($colors, color-text); 
+        padding: 10px;
+        line-height: 1.6;
+        .detProduct {
+            h2 {
+                font-family: map-get($family, fontTitle);
+                text-transform: uppercase;
+                font-size: 30px;
+            }
+            h3 {
+                font-family: map-get($family, fontTitle);
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 15px;
+            }
+            p {
+                margin-top: 10px;
+                font-family: map-get($family, fontText);
+                font-size: 13px;
+            }
+        }
+        .detCarrito {
+            h4 {
+                font-family: map-get($family, fontText);
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            .itemCountDetil {
+                .btnCount {
+                    button {
+                        border-radius: 5px;
+                        font-family: map-get($family, fontText);
+                        font-size: 15px;
+                        font-weight: bold;
+                        width: 25px;
+                        height: 25px;
+                        cursor: pointer;
+                        margin-bottom: 10px;
+                    }
+                    .btnC-resta {
+                        margin-right: 20px;
+                        color: map-get($colors, color-text);
+                        background: linear-gradient(145deg, #eae3e3, #c5bfbf);
+                        box-shadow:  5px 5px 10px #817d7d,
+                                -5px -5px 10px #ffffff;
+                        border: none;
+                        &:hover {
+                            background: linear-gradient(145deg, #ece6e6, #e1dcdc);
+                        }
+                    }
+                    .btnC-suma {
+                        margin-left: 20px;
+                        border: none;
+                        background: linear-gradient(145deg, #7d868d, #697177);
+                        box-shadow:  5px 5px 10px #454a4e,
+                                 5px -5px 10px #ffffff;
+                        color: map-get($colors, color-bg-offset);
+                    }
+                }
+            }   
+            .itemCountButton {
+                margin-top: 10px;
+                .carrito {
+                    width: 100%;
+                    height: 50px;
+                    font-family: map-get($family, fontText);
+                    text-align: center;
+                    border: none;
+                    border-radius: 5px;
+                    font-weight:400;
+                    font-size: 15px;
+                    cursor: pointer;
+                }
+                .c1 {
+                    border-radius: 10px;
+                    background: linear-gradient(145deg, #eae3e3, #c5bfbf);
+                    box-shadow:  5px 5px 10px #817d7d,
+                    -5px -5px 10px #ffffff;
+                    color: map-get($colors, color-text);
+                    &:hover {
+                        background: linear-gradient(145deg, #ece6e6, #e1dcdc);
+                    }
+                }
+                .c2 {
+                    border-radius: 10px;
+                    background: linear-gradient(145deg, #7d868d, #697177);
+                    box-shadow:  5px 5px 10px #454a4e,
+                                 5px -5px 10px #ffffff;
+                    color: map-get($colors, color-bg);
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .itemContainer {
+        flex-direction: column;
+        margin: 90px 20px;
+        padding: 50px;
+        flex-direction: column;
+        box-shadow:  5px 5px 10px #6f6d6b,
+             -5px -5px 10px #ffffff;
+        div {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .itemContainer {
+        flex-direction: column;
+        margin: 90px 12px;
+        padding: 50px;
+        box-shadow:  5px 5px 10px #6f6d6b,
+             -5px -5px 10px #ffffff;
+        div {
+            margin-bottom: 20px;
+        }
+        .imgDetail {
+            img {
+                width: 250px;
+                height: 350px;
+            }
+        }
+    }
+}

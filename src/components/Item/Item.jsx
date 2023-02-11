@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Item = ({item}) => {
     return (
@@ -10,8 +11,8 @@ const Item = ({item}) => {
                 <div className='flip-card-back'>
                     <img src={item.img} alt="" />
                     <h2>{item.nombre} {item.modelo}</h2>
-                    <h3>${item.precio}</h3>
-                    <button className='buttonProducto'><a href="">Ver producto</a></button>
+                    <h3>U$S{item.precio}</h3>
+                    <Link to={`/item/${item.id}`}><button className='buttonProducto'>Ver producto</button></Link>
                 </div>
             </div>
         </div>
