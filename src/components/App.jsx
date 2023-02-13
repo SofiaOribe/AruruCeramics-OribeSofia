@@ -6,7 +6,7 @@ import '../styles/styles.css';
 import Navbar  from './Navbar/Navbar';
 import ItemListContainer from './ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer';
-
+import Checkout from './Checkout/Checkout';
 const App = () => {
 
   const body = document.body;
@@ -36,6 +36,7 @@ const App = () => {
           <Route path='/' element={<ItemListContainer/>}/>
           <Route path='/category/:idCategoria' element={<ItemListContainer/>}/>
           <Route path='/item/:id' element={<ItemDetailContainer/>} />
+          <Route element={<Checkout/>}/>
         </Routes>
 
       </BrowserRouter>

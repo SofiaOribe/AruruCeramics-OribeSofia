@@ -49,6 +49,7 @@ header .navbar .secciones .links {
 header .navbar .secciones .links li {
   list-style: none;
   padding: 0 10px;
+  position: relative;
 }
 header .navbar .secciones .links li .aNavbar {
   text-decoration: none;
@@ -61,6 +62,16 @@ header .navbar .secciones .links li .aNavbar {
 }
 header .navbar .secciones .links li .aNavbar:hover {
   color: #EEEEEE;
+}
+header .navbar .secciones .links li .categorias {
+  display: none;
+  position: absolute;
+  left: 0;
+}
+header .navbar .secciones .links li .categorias li .aCateg {
+  text-decoration: none;
+  font-family: "Quicksand";
+  color: #41474C;
 }
 
 .scroll-down header {

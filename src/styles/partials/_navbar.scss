@@ -33,6 +33,7 @@ header {
                 li {
                     list-style: none;
                     padding: 0 10px;
+                    position: relative;
                     .aNavbar {
                         text-decoration: none;
                         color: map-get($colors, color-text);
@@ -45,13 +46,24 @@ header {
                             color: map-get($colors, color-primary-offset);
                         }
                     }
+                    .categorias {
+                        display: none;
+                        position: absolute;
+                        left: 0;
+                        li {
+                            .aCateg {
+                                text-decoration: none;
+                                font-family: map-get($family, fontText);
+                                color: map-get($colors, color-text);
+                            }
+                        }
+                    }
                 }
-                
             }
         }
     }
-   
 }
+
 
 .scroll-down header {
     transform: translate3d(0, -100%, 0);
