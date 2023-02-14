@@ -40,15 +40,18 @@ header .navbar .logo span {
 header .navbar .secciones {
   padding: 0;
   align-items: center;
+  display: flex;
+  gap: 20px;
 }
 header .navbar .secciones .links {
   display: flex;
   margin: 0;
   padding: 0;
+  display: flex;
+  gap: 20px;
 }
 header .navbar .secciones .links li {
   list-style: none;
-  padding: 0 10px;
   position: relative;
 }
 header .navbar .secciones .links li .aNavbar {
@@ -61,17 +64,36 @@ header .navbar .secciones .links li .aNavbar {
   letter-spacing: 2px;
 }
 header .navbar .secciones .links li .aNavbar:hover {
-  color: #EEEEEE;
+  color: #757D84;
 }
-header .navbar .secciones .links li .categorias {
+header .navbar .secciones .links .liProducts .contCategory {
   display: none;
   position: absolute;
   left: 0;
 }
-header .navbar .secciones .links li .categorias li .aCateg {
+header .navbar .secciones .links .liProducts .contCategory .categorias {
+  padding: 5px 12px;
+  background-color: #fafbf5;
+  box-shadow: 0 8px 32px 0 rgba(73, 73, 73, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(7px);
+}
+header .navbar .secciones .links .liProducts .contCategory .categorias li {
+  line-height: 1.2;
+}
+header .navbar .secciones .links .liProducts .contCategory .categorias li .aCateg {
   text-decoration: none;
   font-family: "Quicksand";
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
   color: #41474C;
+}
+header .navbar .secciones .links .liProducts .contCategory .categorias li .aCateg:hover {
+  color: #757D84;
+}
+header .navbar .secciones .links .liProducts:hover .contCategory {
+  display: block;
 }
 
 .scroll-down header {
@@ -94,7 +116,6 @@ header .navbar .secciones .links li .categorias li .aCateg {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 10px;
 }
 .cartWidget .btnCart {
   background: none;

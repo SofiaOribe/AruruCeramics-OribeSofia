@@ -9,8 +9,9 @@ const Secciones = () => {
         <>
          <ul className="links">
             <li><Link className='aNavbar' to={'/'}>INICIO</Link></li>
-            <li><Link className='aNavbar'>PRODUCTOS</Link>
-                <Categorias/>
+            <li className='liProducts'>
+                <Link className='aNavbar' to={'/'}>PRODUCTOS</Link>
+                <div className='contCategory'><Categorias/></div>
             </li>
             <li><Link className='aNavbar'>INFORMACIÓN</Link></li>
          </ul>

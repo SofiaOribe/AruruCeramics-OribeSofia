@@ -33,9 +33,9 @@ const App = () => {
       <BrowserRouter>
         <Navbar/>
         <Routes>
-          <Route path='/' element={<ItemListContainer/>}/>
-          <Route path='/category/:idCategoria' element={<ItemListContainer/>}/>
-          <Route path='/item/:id' element={<ItemDetailContainer/>} />
+          <Route exact path='/' element={<ItemListContainer/>}/>
+          <Route exact path='/category/:idCategoria' element={<ItemListContainer/>}/>
+          <Route exact path='/item/:id' element={<ItemDetailContainer/>} />
           <Route element={<Checkout/>}/>
         </Routes>
 
