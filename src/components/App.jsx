@@ -1,12 +1,23 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import 'react-toastify/dist/ReactToastify.css';
 import '../styles/styles.css';
 
-//Importo componentes
+import React from 'react';
+/* React Router */
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+/* Toastify */
+import { ToastContainer } from 'react-toastify';
+
+//Context
+import { DarkModeProvider } from '../context/DarkModeContext';
+
+/*Componentes*/
 import Navbar  from './Navbar/Navbar';
 import ItemListContainer from './ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer';
 import Checkout from './Checkout/Checkout';
+import Cart from './Cart/Cart';
+
+
 const App = () => {
 
   const body = document.body;
@@ -31,14 +42,17 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Navbar/>
-        <Routes>
-          <Route exact path='/' element={<ItemListContainer/>}/>
-          <Route exact path='/category/:idCategoria' element={<ItemListContainer/>}/>
-          <Route exact path='/item/:id' element={<ItemDetailContainer/>} />
-          <Route element={<Checkout/>}/>
-        </Routes>
-
+        <DarkModeProvider>
+          <Navbar/>
+          <ToastContainer/>
+          <Routes>
+            <Route path='/' element={<ItemListContainer/>}/>
+            <Route path='/category/:idCategoria' element={<ItemListContainer/>}/>
+            <Route path='/item/:id' element={<ItemDetailContainer/>} />
+            <Route path='/checkout' element={<Checkout/>}/>
+            <Route path='/cart' element={<Cart/>}/>
+          </Routes>
+        </DarkModeProvider>
       </BrowserRouter>
     </>
   );

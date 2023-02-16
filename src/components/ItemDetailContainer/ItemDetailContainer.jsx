@@ -12,7 +12,7 @@ const ItemDetailContainer = () => {
             const prod = prods.find(item => item.id === parseInt(id));
             setProducto(prod);
         });
-    }, [])
+    }, [id])
 
     return (
         <>

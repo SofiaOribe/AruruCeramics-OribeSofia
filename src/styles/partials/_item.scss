@@ -74,13 +74,20 @@
     text-decoration: none;
     font-family: map-get($family, fontText);
     font-weight: 500;
-    color: map-get($colors, color-text);
     cursor: pointer;
-    background: linear-gradient(145deg, #ffffff, #e2e1e18a);
-                    box-shadow:  5px 5px 10px #817d7d95;
-    &:hover {
-        background: linear-gradient(145deg, #7d868d, #697177);
-        color: map-get($colors, color-bg);
+    background: linear-gradient(145deg, #eae3e3, #c5bfbf);
+    box-shadow: -5px -5px 20px #cbcbc6,  
+                5px 5px 20px #ffffff;
+    color: map-get($colors, color-text);
+    transition: all 0.1s ease-in-out;
+    &:focus, &:hover {
+        background: linear-gradient(145deg, #ece6e6, #e1dcdc);
+        box-shadow:  -2px -2px 5px #cbcbc6, 
+                     2px 2px 5px #ffffff;
+    }
+    &:active {
+        box-shadow:  inset 1px 1px 2px #cbcbc6, 
+                     inset -1px -1px 2px #ffffff;
     }
 }
 

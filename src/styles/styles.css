@@ -211,14 +211,18 @@ header .navbar .secciones .links .liProducts:hover .contCategory {
   text-decoration: none;
   font-family: "Quicksand";
   font-weight: 500;
-  color: #41474C;
   cursor: pointer;
-  background: linear-gradient(145deg, #ffffff, rgba(226, 225, 225, 0.5411764706));
-  box-shadow: 5px 5px 10px rgba(129, 125, 125, 0.5843137255);
+  background: linear-gradient(145deg, #eae3e3, #c5bfbf);
+  box-shadow: -5px -5px 20px #cbcbc6, 5px 5px 20px #ffffff;
+  color: #41474C;
+  transition: all 0.1s ease-in-out;
 }
-.buttonProducto:hover {
-  background: linear-gradient(145deg, #7d868d, #697177);
-  color: #fafbf5;
+.buttonProducto:focus, .buttonProducto:hover {
+  background: linear-gradient(145deg, #ece6e6, #e1dcdc);
+  box-shadow: -2px -2px 5px #cbcbc6, 2px 2px 5px #ffffff;
+}
+.buttonProducto:active {
+  box-shadow: inset 1px 1px 2px #cbcbc6, inset -1px -1px 2px #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -280,6 +284,7 @@ header .navbar .secciones .links .liProducts:hover .contCategory {
   margin-bottom: 10px;
 }
 .itemContainer .productDetail .detCarrito .itemCountDetil .btnCount button {
+  border: none;
   border-radius: 5px;
   font-family: "Quicksand";
   font-size: 15px;
@@ -288,23 +293,23 @@ header .navbar .secciones .links .liProducts:hover .contCategory {
   height: 25px;
   cursor: pointer;
   margin-bottom: 10px;
+  color: #41474C;
+  background: linear-gradient(145deg, #eae3e3, #c5bfbf);
+  box-shadow: -5px -5px 20px #cbcbc6, 5px 5px 20px #ffffff;
+  transition: all 0.1s ease-in-out;
+}
+.itemContainer .productDetail .detCarrito .itemCountDetil .btnCount button:focus, .itemContainer .productDetail .detCarrito .itemCountDetil .btnCount button:hover {
+  background: linear-gradient(145deg, #ece6e6, #e1dcdc);
+  box-shadow: -2px -2px 5px #cbcbc6, 2px 2px 5px #ffffff;
+}
+.itemContainer .productDetail .detCarrito .itemCountDetil .btnCount button:active {
+  box-shadow: inset 1px 1px 2px #cbcbc6, inset -1px -1px 2px #ffffff;
 }
 .itemContainer .productDetail .detCarrito .itemCountDetil .btnCount .btnC-resta {
   margin-right: 20px;
-  color: #41474C;
-  background: linear-gradient(145deg, #eae3e3, #c5bfbf);
-  box-shadow: 5px 5px 10px #817d7d, -5px -5px 10px #ffffff;
-  border: none;
-}
-.itemContainer .productDetail .detCarrito .itemCountDetil .btnCount .btnC-resta:hover {
-  background: linear-gradient(145deg, #ece6e6, #e1dcdc);
 }
 .itemContainer .productDetail .detCarrito .itemCountDetil .btnCount .btnC-suma {
   margin-left: 20px;
-  border: none;
-  background: linear-gradient(145deg, #7d868d, #697177);
-  box-shadow: 5px 5px 10px #454a4e, 5px -5px 10px #ffffff;
-  color: #f2ede9;
 }
 .itemContainer .productDetail .detCarrito .itemCountButton {
   margin-top: 10px;
@@ -315,25 +320,21 @@ header .navbar .secciones .links .liProducts:hover .contCategory {
   font-family: "Quicksand";
   text-align: center;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   font-weight: 400;
   font-size: 15px;
   cursor: pointer;
-}
-.itemContainer .productDetail .detCarrito .itemCountButton .c1 {
-  border-radius: 10px;
   background: linear-gradient(145deg, #eae3e3, #c5bfbf);
-  box-shadow: 5px 5px 10px #817d7d, -5px -5px 10px #ffffff;
+  box-shadow: -5px -5px 20px #cbcbc6, 5px 5px 20px #ffffff;
   color: #41474C;
+  transition: all 0.1s ease-in-out;
 }
-.itemContainer .productDetail .detCarrito .itemCountButton .c1:hover {
+.itemContainer .productDetail .detCarrito .itemCountButton .carrito:focus, .itemContainer .productDetail .detCarrito .itemCountButton .carrito:hover {
   background: linear-gradient(145deg, #ece6e6, #e1dcdc);
+  box-shadow: -2px -2px 5px #cbcbc6, 2px 2px 5px #ffffff;
 }
-.itemContainer .productDetail .detCarrito .itemCountButton .c2 {
-  border-radius: 10px;
-  background: linear-gradient(145deg, #7d868d, #697177);
-  box-shadow: 5px 5px 10px #454a4e, 5px -5px 10px #ffffff;
-  color: #fafbf5;
+.itemContainer .productDetail .detCarrito .itemCountButton .carrito:active {
+  box-shadow: inset 1px 1px 2px #cbcbc6, inset -1px -1px 2px #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -363,6 +364,72 @@ header .navbar .secciones .links .liProducts:hover .contCategory {
     height: 350px;
   }
 }
+.formContent {
+  display: flex;
+  justify-content: center;
+  margin: 150px 20px;
+}
+.formContent form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 320px;
+}
+.formContent form label {
+  width: 95%;
+}
+.formContent form label input {
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-family: "Quicksand";
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px;
+  width: 100%;
+  background: #fafbf5;
+  box-shadow: inset 2px 2px 5px #cbcbc6, inset -5px -5px 10px #ffffff;
+  box-sizing: border-box;
+  transition: all 0.1s ease-in-out;
+}
+.formContent form label input:focus, .formContent form label input:hover {
+  box-shadow: inset 1px 1px 2px #cbcbc6, inset -1px -1px 2px #ffffff;
+}
+.formContent form label input::-moz-placeholder {
+  color: #41474C;
+}
+.formContent form label input::placeholder {
+  color: #41474C;
+}
+.formContent form .enviarBtn {
+  width: 90%;
+  cursor: pointer;
+  color: #41474C;
+  font-weight: 600;
+  font-family: "Quicksand";
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  box-shadow: -5px -5px 20px #cbcbc6, 5px 5px 20px #ffffff;
+  transition: all 0.1s ease-in-out;
+}
+.formContent form .enviarBtn:focus, .formContent form .enviarBtn:hover {
+  box-shadow: -2px -2px 5px #cbcbc6, 2px 2px 5px #ffffff;
+}
+.formContent form .enviarBtn:active {
+  box-shadow: inset 1px 1px 2px #cbcbc6, inset -1px -1px 2px #ffffff;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 /*General*/
 * {
   padding: 0;

@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
 
-const ItemCount = ({ValInicial, stock}) => {
+const ItemCount = ({ValInicial, stock, onAdd}) => {
     const [contador, setContador] = useState(ValInicial) 
 
     const sumar = () => contador < stock && setContador(contador + 1)
     const restar = () => contador > ValInicial && setContador(contador - 1)
+
     return (
         <div className='itemCount'>
             <section className='btnCount'>
@@ -14,7 +15,7 @@ const ItemCount = ({ValInicial, stock}) => {
                 <button className="btnC-suma" onClick={()=> sumar()}>+</button>
             </section>
             <section className='itemCountButton'>
-                    <button className="carrito c1">Agregar al Carrito</button>
+                    <button className="carrito c1" onClick={() => onAdd(contador)}>Agregar al Carrito</button>
             </section>
         </div>
     );

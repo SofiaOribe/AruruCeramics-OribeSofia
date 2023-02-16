@@ -1,0 +1,67 @@
+.formContent {
+    display: flex;
+    justify-content: center;
+    margin: 150px 20px;
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 320px;
+        label {
+            width: 95%;
+            input {
+                border: none;
+                outline: none;
+                border-radius: 50px;
+                font-family: map-get($family, fontText);
+                font-size: 16px;
+                font-weight: 500;
+                padding: 16px;
+                width: 100%;
+                background: #fafbf5;
+                box-shadow: inset 2px 2px 5px #cbcbc6,
+                            inset -5px -5px 10px #ffffff;
+                box-sizing: border-box;
+                transition: all 0.1s ease-in-out;
+                &:focus, &:hover {
+                    box-shadow:  inset 1px 1px 2px #cbcbc6, 
+                                 inset -1px -1px 2px #ffffff;
+                }
+                &::placeholder {
+                    color: map-get($colors, color-text);
+                } 
+            }
+        }
+        .enviarBtn {
+            width: 90%;
+            cursor: pointer;
+            color: map-get($colors, color-text);
+            font-weight: 600;
+            font-family: map-get($family, fontText);
+            font-size: 16px;
+            font-weight: 500;
+            padding: 16px;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            box-shadow: -5px -5px 20px #cbcbc6,  
+                        5px 5px 20px #ffffff;
+            transition: all 0.1s ease-in-out;
+            &:focus, &:hover {
+                box-shadow:  -2px -2px 5px #cbcbc6, 
+                             2px 2px 5px #ffffff;
+            }
+            &:active {
+                box-shadow:  inset 1px 1px 2px #cbcbc6, 
+                             inset -1px -1px 2px #ffffff;
+            }
+        }
+    }
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
