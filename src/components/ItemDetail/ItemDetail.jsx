@@ -1,11 +1,14 @@
 import React from 'react';
-import ItemCount from '../ItemCount/ItemCount';
 import { Link } from 'react-router-dom';
+
+import ItemCount from '../ItemCount/ItemCount';
+
 
 const ItemDetail = ({prod}) => {
     //Función que agrega el producto al carrito
     const onAdd = (contador) => {
-
+        console.log(contador)
+        console.log(prod)
     }
 
     return (
@@ -29,7 +32,7 @@ const ItemDetail = ({prod}) => {
                         <ItemCount ValInicial={1} stock={prod.stock} onAdd={onAdd}/>
                     </section>
                     <section className='itemCountButton'>
-                        <Link to={'/cart'}><button className='carrito c1'>Finalizar compra</button></Link>
+                        <Link to={'/cart'}><button className='carrito'>Finalizar compra</button></Link>
                     </section>
                 </div>
 

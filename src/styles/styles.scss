@@ -10,6 +10,7 @@
 @import './partials/item';
 @import './partials/itemDetail';
 @import './partials/checkout';
+@import './partials/cart';
 
 /*General*/
 
@@ -22,3 +23,6 @@ body {
     background-color: map-get($colors, color-bg);
 }
 
+#root {
+    padding: 150px 40px;
+}

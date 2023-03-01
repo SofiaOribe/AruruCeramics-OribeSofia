@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Categorias from '../Categorias/Categorias';
 
-const Secciones = () => {
+const Secciones = React.memo(() => {
 
     return (
         <>
@@ -17,6 +17,6 @@ const Secciones = () => {
          </ul>
         </>
     );
-}
+});
 
 export default Secciones;

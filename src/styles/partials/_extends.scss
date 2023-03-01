@@ -18,6 +18,11 @@
     justify-content: space-evenly;
 }
 
+%flexAround {
+    display: flex;
+    justify-content: space-around;
+}
+
 %flexBetween {
     display: flex;
     justify-content: space-between;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 const Item = ({item}) => {
+
     return (
         <div className='flip-card'>
             <div className='flip-card-inner'>

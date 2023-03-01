@@ -4,11 +4,14 @@ import '../styles/styles.css';
 import React from 'react';
 /* React Router */
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 /* Toastify */
 import { ToastContainer } from 'react-toastify';
 
-//Context
-import { DarkModeProvider } from '../context/DarkModeContext';
+/*Firebase */
+//import { cargarBDD } from '../utils/firebase';
+import { getProductos } from '../utils/firebase';
+
 
 /*Componentes*/
 import Navbar  from './Navbar/Navbar';
@@ -18,33 +21,35 @@ import Checkout from './Checkout/Checkout';
 import Cart from './Cart/Cart';
 
 
+
 const App = () => {
+  //cargarBDD();
+  getProductos();
 
   const body = document.body;
   let lastScroll = 0;
   window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
-
+    
     if(currentScroll <= 0) {
-        body.classList.remove("scroll-up")
+      body.classList.remove("scroll-up")
     }
     if(currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
-        body.classList.remove("scroll-up");
-        body.classList.add("scroll-down");
+      body.classList.remove("scroll-up");
+      body.classList.add("scroll-down");
     }
     if(currentScroll < lastScroll && body.classList.contains("scroll-down")) {
-        body.classList.remove("scroll-down");
-        body.classList.add("scroll-up");
+      body.classList.remove("scroll-down");
+      body.classList.add("scroll-up");
     }
     lastScroll = currentScroll;
   });
-
+  
   return (
     <>
       <BrowserRouter>
-        <DarkModeProvider>
-          <Navbar/>
-          <ToastContainer/>
+        <Navbar/>
+        <ToastContainer/>
           <Routes>
             <Route path='/' element={<ItemListContainer/>}/>
             <Route path='/category/:idCategoria' element={<ItemListContainer/>}/>
@@ -52,7 +57,6 @@ const App = () => {
             <Route path='/checkout' element={<Checkout/>}/>
             <Route path='/cart' element={<Cart/>}/>
           </Routes>
-        </DarkModeProvider>
       </BrowserRouter>
     </>
   );

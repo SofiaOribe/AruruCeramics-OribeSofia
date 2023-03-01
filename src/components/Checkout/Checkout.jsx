@@ -12,6 +12,7 @@ const Checkout = () => {
         //A formdata le envio el estado actual del formulario - transformo html en un objeto
         const data = new FormData(datosForm.current)
         const cliente = Object.fromEntries(data)
+        console.log(cliente)
         event.target.reset();
         toast('🦄 Compra finalizada', {
             position: "bottom-right",

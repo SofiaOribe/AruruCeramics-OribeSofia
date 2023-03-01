@@ -3,7 +3,10 @@ import React from 'react';
 import Secciones from './Secciones/Secciones';
 import CartWidget from './CartWidget/CartWidget';
 
+
 const Navbar = () => {
+
+
     return (
         <header>
             <nav className='navbar'>
@@ -12,7 +15,7 @@ const Navbar = () => {
                 </div>
                 <div className="secciones">
                     <Secciones/>
-                    <CartWidget cantCarrito={9}/>
+                    <CartWidget cantCarrito={1}/>
                 </div>
             </nav>
         </header>
