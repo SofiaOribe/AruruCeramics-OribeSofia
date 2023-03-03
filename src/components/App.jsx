@@ -10,8 +10,8 @@ import { ToastContainer } from 'react-toastify';
 
 /*Firebase */
 //import { cargarBDD } from '../utils/firebase';
-import { getProductos } from '../utils/firebase';
-
+//import { getProductos } from '../utils/firebase';
+//import { updateProducto, deleteProducto } from '../utils/firebase'; 
 
 /*Componentes*/
 import Navbar  from './Navbar/Navbar';
@@ -20,12 +20,15 @@ import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer';
 import Checkout from './Checkout/Checkout';
 import Cart from './Cart/Cart';
 
+/*Context */
+import { CarritoProvider } from '../context/CarritoContext';
 
 
 const App = () => {
   //cargarBDD();
-  getProductos();
+  //getProductos();
 
+  /*Lógica del header */
   const body = document.body;
   let lastScroll = 0;
   window.addEventListener('scroll', () => {
@@ -48,15 +51,17 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Navbar/>
-        <ToastContainer/>
-          <Routes>
-            <Route path='/' element={<ItemListContainer/>}/>
-            <Route path='/category/:idCategoria' element={<ItemListContainer/>}/>
-            <Route path='/item/:id' element={<ItemDetailContainer/>} />
-            <Route path='/checkout' element={<Checkout/>}/>
-            <Route path='/cart' element={<Cart/>}/>
-          </Routes>
+        <CarritoProvider>
+          <Navbar/>
+          <ToastContainer/>
+            <Routes>
+              <Route path='/' element={<ItemListContainer/>}/>
+              <Route path='/category/:idCategoria' element={<ItemListContainer/>}/>
+              <Route path='/item/:id' element={<ItemDetailContainer/>} />
+              <Route path='/checkout' element={<Checkout/>}/>
+              <Route path='/cart' element={<Cart/>}/>
+            </Routes>
+        </CarritoProvider>
       </BrowserRouter>
     </>
   );

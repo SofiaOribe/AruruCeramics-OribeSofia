@@ -2,13 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import ItemCount from '../ItemCount/ItemCount';
-
+import { useCarritoContext } from '../../context/CarritoContext';
 
 const ItemDetail = ({prod}) => {
+
+    const {addItem} = useCarritoContext();
+
     //Función que agrega el producto al carrito
-    const onAdd = (contador) => {
-        console.log(contador)
-        console.log(prod)
+    const onAdd = (cantidad) => {
+        addItem(prod, cantidad);
     }
 
     return (
