@@ -8,11 +8,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 /* Toastify */
 import { ToastContainer } from 'react-toastify';
 
-/*Firebase */
-//import { cargarBDD } from '../utils/firebase';
-//import { getProductos } from '../utils/firebase';
-//import { updateProducto, deleteProducto } from '../utils/firebase'; 
-
 /*Componentes*/
 import Navbar  from './Navbar/Navbar';
 import ItemListContainer from './ItemListContainer/ItemListContainer';
@@ -25,8 +20,6 @@ import { CarritoProvider } from '../context/CarritoContext';
 
 
 const App = () => {
-  //cargarBDD();
-  //getProductos();
 
   /*Lógica del header */
   const body = document.body;

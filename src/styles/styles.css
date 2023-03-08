@@ -423,6 +423,15 @@ header .navbar .secciones .links .liProducts:hover .contCategory {
 .formContent form .enviarBtn:active {
   box-shadow: inset 1px 1px 2px #cbcbc6, inset -1px -1px 2px #ffffff;
 }
+.formContent form .correoError {
+  width: 270px;
+}
+.formContent form .correoError p {
+  color: #ff3300;
+  font-family: "Quicksand";
+  font-weight: 500;
+  font-size: 12px;
+}
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
