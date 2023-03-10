@@ -14,6 +14,7 @@ import ItemListContainer from './ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer';
 import Checkout from './Checkout/Checkout';
 import Cart from './Cart/Cart';
+import Home from './Home/Home';
 
 /*Context */
 import { CarritoProvider } from '../context/CarritoContext';
@@ -48,7 +49,8 @@ const App = () => {
           <Navbar/>
           <ToastContainer/>
             <Routes>
-              <Route path='/' element={<ItemListContainer/>}/>
+              <Route path='/' element={<Home/>}/>
+              <Route path='/productos' element={<ItemListContainer/>}/>
               <Route path='/category/:idCategoria' element={<ItemListContainer/>}/>
               <Route path='/item/:id' element={<ItemDetailContainer/>} />
               <Route path='/checkout' element={<Checkout/>}/>

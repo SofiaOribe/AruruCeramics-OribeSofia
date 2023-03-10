@@ -2,6 +2,7 @@ import React from 'react';
 
 import { useCarritoContext } from '../../context/CarritoContext';
 
+
 const ItemCart = ({item}) => {
 
     const {removeItem} = useCarritoContext();
@@ -13,12 +14,15 @@ const ItemCart = ({item}) => {
                 <div className="cardText">
                     <h2>{item.nombre} {item.modelo} {item.marca}</h2>
                     <p>
-                        {item.especificaciones1} 
-                        <br/>
-                        {item.especificaciones2}
+                        {item.especificaciones1} - {item.especificaciones2}
+                        <br />
+                        Cantidad: {item.cant}
+                        <br />
+                        Precio unitario: U$S{item.precio}
                     </p>
 
-                    <h3>Precio unitario: U$S{item.precio}</h3>
+                    <h3>Total: U$S{item.cant*item.precio}</h3>
+
                 
                     <div>
                         <button className='btnDelete' onClick={() => removeItem(item.id)}>Eliminar de carrito</button>

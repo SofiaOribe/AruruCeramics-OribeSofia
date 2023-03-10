@@ -25,7 +25,10 @@ const ItemDetail = ({prod}) => {
                 <div className='detProduct'>
                     <h2>{prod.nombre} {prod.modelo}</h2>
                     <h3>{prod.marca}</h3>
-                    <p>{prod.especificaciones1} <br/> {prod.especificaciones2} <br /> Stock: {prod.stock}</p>
+                    <p>{prod.especificaciones1} 
+                    <br/> {prod.especificaciones2} 
+                    <br /> {prod.descripcion} 
+                    <br /> Stock: {prod.stock}</p>
                 </div>
 
                 <div className='detCarrito'>

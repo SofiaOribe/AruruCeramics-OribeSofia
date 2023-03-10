@@ -1,0 +1,91 @@
+.homeP {
+    display: flex;
+    justify-content: space-evenly;
+    .homeUno {
+        width: 500px;
+        .marca {
+            h1 {
+                color: map-get($colors, color-t);
+                font-family: map-get($family, fontTitle);
+                font-size: 95px;
+                letter-spacing: 2.9px;
+            }
+        }
+        .subtitle {
+            margin-bottom: 15px;
+            h2 {
+                color: map-get($colors, color-text);
+                font-family: map-get($family, fontText);
+                font-size: 35px;
+                font-weight: 300;
+            }
+        }
+        .textHome {
+            margin-bottom: 30px;
+            p {
+                color: map-get($colors, color-text);
+                font-family: map-get($family, fontText);
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+        .linkProductos {
+            .linkbtn {
+                button {
+                    border: none;
+                    color: map-get($colors, color-t);
+                    font-family: map-get($family, fontText);
+                    font-weight: 500;
+                    padding: 10px 20px;
+                    border-radius: 25px;
+                    background: linear-gradient(145deg, #eae3e3, #e2d9d4);
+                    box-shadow: -5px -5px 20px #cbcbc6,  
+                                5px 5px 20px #ffffff;
+                    transition: all 0.1s ease-in-out;
+                    &:focus, &:hover {
+                        box-shadow:  -2px -2px 5px #cbcbc6, 
+                                     2px 2px 5px #ffffff;
+                    }
+                    &:active {
+                        box-shadow:  inset 1px 1px 2px #cbcbc6, 
+                                     inset -1px -1px 2px #ffffff;
+                    }
+                }
+            }
+        }
+    }
+    .homeDos {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:  cover;
+        border-radius: 20px;
+        width: 500px;
+        height: 450px;
+        position: relative;
+        box-shadow: -5px -5px 10px #cbcbc6, 
+                    5px 5px 5px #ffffff;
+    }
+}
+
+.img-uno {
+    background-image: url('https://static.wixstatic.com/media/5906ab_73597d30d96b4486acafcc5ad8f75f6f~mv2.jpg/v1/fill/w_863,h_575,al_c,q_85,usm_0.66_1.00_0.01/5906ab_73597d30d96b4486acafcc5ad8f75f6f~mv2.webp');
+}
+
+@media (max-width: 768px) {
+    .homeUno {
+        width: 100%;
+        .marca {
+            h1 {
+                
+                font-size: 90px;
+            }
+        }
+    }
+    .homeDos {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+
+}

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Categorias from '../Categorias/Categorias';
 
+
 const Secciones = React.memo(() => {
 
     return (
@@ -10,7 +11,7 @@ const Secciones = React.memo(() => {
          <ul className="links">
             <li><Link className='aNavbar' to={'/'}>INICIO</Link></li>
             <li className='liProducts'>
-                <Link className='aNavbar' to={'/'}>PRODUCTOS</Link>
+                <Link className='aNavbar' to={'/productos'}>PRODUCTOS</Link>
                 <div className='contCategory'><Categorias/></div>
             </li>
             <li><Link className='aNavbar'>INFORMACIÓN</Link></li>

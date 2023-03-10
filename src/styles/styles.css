@@ -531,6 +531,80 @@ input[type=number]::-webkit-outer-spin-button {
     margin-left: 0px;
   }
 }
+.homeP {
+  display: flex;
+  justify-content: space-evenly;
+}
+.homeP .homeUno {
+  width: 500px;
+}
+.homeP .homeUno .marca h1 {
+  color: #3c6d8b;
+  font-family: "Bodoni Moda";
+  font-size: 95px;
+  letter-spacing: 2.9px;
+}
+.homeP .homeUno .subtitle {
+  margin-bottom: 15px;
+}
+.homeP .homeUno .subtitle h2 {
+  color: #41474C;
+  font-family: "Quicksand";
+  font-size: 35px;
+  font-weight: 300;
+}
+.homeP .homeUno .textHome {
+  margin-bottom: 30px;
+}
+.homeP .homeUno .textHome p {
+  color: #41474C;
+  font-family: "Quicksand";
+  font-size: 20px;
+  font-weight: 500;
+}
+.homeP .homeUno .linkProductos .linkbtn button {
+  border: none;
+  color: #3c6d8b;
+  font-family: "Quicksand";
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: linear-gradient(145deg, #eae3e3, #e2d9d4);
+  box-shadow: -5px -5px 20px #cbcbc6, 5px 5px 20px #ffffff;
+  transition: all 0.1s ease-in-out;
+}
+.homeP .homeUno .linkProductos .linkbtn button:focus, .homeP .homeUno .linkProductos .linkbtn button:hover {
+  box-shadow: -2px -2px 5px #cbcbc6, 2px 2px 5px #ffffff;
+}
+.homeP .homeUno .linkProductos .linkbtn button:active {
+  box-shadow: inset 1px 1px 2px #cbcbc6, inset -1px -1px 2px #ffffff;
+}
+.homeP .homeDos {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  width: 500px;
+  height: 450px;
+  position: relative;
+  box-shadow: -5px -5px 10px #cbcbc6, 5px 5px 5px #ffffff;
+}
+
+.img-uno {
+  background-image: url("https://static.wixstatic.com/media/5906ab_73597d30d96b4486acafcc5ad8f75f6f~mv2.jpg/v1/fill/w_863,h_575,al_c,q_85,usm_0.66_1.00_0.01/5906ab_73597d30d96b4486acafcc5ad8f75f6f~mv2.webp");
+}
+
+@media (max-width: 768px) {
+  .homeUno {
+    width: 100%;
+  }
+  .homeUno .marca h1 {
+    font-size: 90px;
+  }
+  .homeDos {
+    display: none;
+  }
+}
 /*General*/
 * {
   padding: 0;
