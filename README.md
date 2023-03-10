@@ -1,6 +1,6 @@
 # Aruru Ceramica Artesanal
-_Hola a todos, este es mi primer proyecto de un ecommerce.
-El mismo está basado en la venta de materiales de cerámica artesanal._
+*Hola a todos, este es mi primer proyecto de un ecommerce.
+El mismo está basado en la venta de materiales de cerámica artesanal.*
 
 **Aclaración: esta pagina web fue creada por un fin educativo.**
 
@@ -21,7 +21,7 @@ _Para abrir el localhost, inserte el siguiente comando en su terminal:_
 
 - `npm start`
 
-_O también puede abrir [http://localhost:3000] _
+O también puede abrir [http://localhost:3000]
 
 
 ## Creado con:
