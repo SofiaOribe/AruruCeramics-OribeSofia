@@ -22,7 +22,6 @@ const ItemCart = ({item}) => {
                     </p>
 
                     <h3>Total: U$S{item.cant*item.precio}</h3>
-
                 
                     <div>
                         <button className='btnDelete' onClick={() => removeItem(item.id)}>Eliminar de carrito</button>

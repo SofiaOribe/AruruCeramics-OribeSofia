@@ -30,62 +30,59 @@ header {
             gap: 20px;
             .links {
                 display: flex;
+                align-items: center;
+                gap: 20px;
                 margin: 0;
                 padding: 0;
-                display: flex;
-                gap: 20px;
                 li {
-                    list-style: none;
                     position: relative;
-                    .aNavbar {
-                        text-decoration: none;
-                        color: map-get($colors, color-text);
-                        font-family: map-get($family, fontText);
-                        font-weight: 500;
-                        font-size: 12px;
-                        transition: all .2s ease;
-                        letter-spacing: 2px;
-                        &:hover {
-                            color: map-get($colors, color-text-offset);
-                        }
-                    }
-                }
-                .liProducts {
-                    .contCategory{
-                        display: none;
-                        position: absolute;
-                        left: 0;
-                        .categorias {
-                            padding: 5px 12px;
-                            background-color: map-get($colors, color-bg);
-                            box-shadow: 0 8px 32px 0 rgba(73, 73, 73, 0.37);
-                            backdrop-filter: blur( 4px );
-                            -webkit-backdrop-filter: blur( 7px );
-                            li {
-                                line-height: 1.2;
-                                .aCateg {
-                                    text-decoration: none;
-                                    font-family: map-get($family, fontText);
-                                    font-size: 12px;
-                                    font-weight: 500;
-                                    letter-spacing: 2px;
-                                    color: map-get($colors, color-text);
-                                    &:hover {
-                                        color: map-get($colors,color-text-offset);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    &:hover .contCategory {
-                        display: block;
-                    }
+                    list-style: none;
                 }
             }
         }
     }
 }
 
+.liProducts {
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    .categorias {
+            position: absolute;
+            transition: clip-path .3s;
+            clip-path: var(--clip);
+            right: 0;
+            bottom: 0;
+            width: max-content;
+            transform: translateY((100%));
+            background-color: map-get($colors, color-bg );
+            border-radius: 5px;
+            padding: 10px 20px;
+            .aCateg {
+                color: map-get($colors, color-text);
+                font-family: map-get($family, fontText);
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: 500px;
+                line-height: 30px;
+            }
+        }
+    &:hover {
+        --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
+    }
+}
+
+
+.aNavbar {
+    text-decoration: none;
+    color: map-get($colors, color-text);
+    font-family: map-get($family, fontText);
+    font-weight: 500;
+    font-size: 12px;
+    transition: all .2s ease;
+    letter-spacing: 2px;
+    &:hover {
+        color: map-get($colors, color-text-offset);
+    }
+}
 
 
 
@@ -101,8 +98,69 @@ header {
     -webkit-backdrop-filter: blur( 7px );
 }
 
-/* 
-@media screen and (max-width: 700px) {
-     
+.barMenu {
+    display: none;
 }
- */
+
+@media (max-width: 500px) {
+    .barMenu {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .secciones {
+        .links {
+            position: fixed;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            top: -700px;
+            left: 0;
+            right: 0;
+            background-color: map-get($colors, color-bg);
+            transition: .5s;
+            li {
+                line-height: 100px;
+                a {
+                    font-size: 20px;
+                }
+            }
+            .liProducts {
+                --clip: 0;
+                overflow: hidden;
+                transition: .5s;
+                .categorias {
+                    display: grid;
+                    position: unset;
+                    width: 100%;
+                    transform: translateY(0);
+                    padding: 0 0;
+                    text-align: center;
+                    transition: height .5s ;
+                    height: 0;
+                    .aCateg {
+                        font-size: 18px;
+                        font-weight: 500;
+                        overflow-y: auto;
+                        grid-auto-rows: max-content;
+                    }
+                }
+                &:hover {
+                    height: 100%;
+                }
+            }
+        }
+        .links.active {
+            height: 100vh;
+            width: 100%;
+            display: block;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            top: 65px;
+        }
+    }
+}

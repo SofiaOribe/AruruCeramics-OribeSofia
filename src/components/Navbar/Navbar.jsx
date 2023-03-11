@@ -15,7 +15,7 @@ const Navbar = () => {
                 </div>
                 <div className="secciones">
                     <Secciones/>
-                    <CartWidget cantCarrito={1}/>
+                    <CartWidget />
                 </div>
             </nav>
         </header>
