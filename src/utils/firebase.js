@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, collection, doc, addDoc, getDocs, getDoc, updateDoc, deleteDoc } from 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDyI1mc4b8yvwtN65xl1XcZ-u_awma-GVk",
+    apiKey: process.env.API_KEY,
     authDomain: "aruru-ceramic.firebaseapp.com",
     projectId: "aruru-ceramic",
     storageBucket: "aruru-ceramic.appspot.com",
